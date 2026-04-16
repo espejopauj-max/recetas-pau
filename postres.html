@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Desayunos rápidos, fáciles y saludables para romper el ayuno. Recetas nutritivas para energía todo el día. ¡Recetas en 5-15 minutos!" />
+  <meta name="keywords" content="desayunos saludables, desayunos rápidos y fáciles, desayunos nutritivos, romper el ayuno, desayunos en casa" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="RecetasFáciles.com – Desayunos Saludables, Rápidos y Fáciles" />
+  <meta property="og:description" content="Descubre desayunos rápidos, fáciles y saludables. Recetas nutritivas para romper el ayuno con energía. ¡De 5 a 15 minutos!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://recetasfaciles.com/" />
+  <meta property="og:image" content="assets/og-home.jpg" />
+  <title>RecetasFáciles.com – Desayunos Saludables, Rápidos y Fáciles</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Schema.org WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RecetasFáciles.com",
+    "url": "https://recetasfaciles.com",
+    "description": "Las mejores recetas fáciles y rápidas para hacer en casa",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://recetasfaciles.com/buscar?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR STICKY ===== -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-egg-fried me-2"></i>RecetasFáciles
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navRecetas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Recetas
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navRecetas">
+              <li><a class="dropdown-item" href="desayunos.html"><i class="bi bi-egg me-2"></i>Desayunos</a></li>
+              <li><a class="dropdown-item" href="comidas.html"><i class="bi bi-egg-fried me-2"></i>Comidas</a></li>
+              <li><a class="dropdown-item" href="postres.html"><i class="bi bi-cake me-2"></i>Postres</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#populares">Populares</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== ANUNCIO SUPERIOR (AdSense placeholder) ===== -->
+  <div class="ad-banner ad-top">
+    <div class="container">
+      <div class="ad-block ad-horizontal">
+        <i class="bi bi-megaphone me-2"></i> Publicidad
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative z-1">
+      <div class="row align-items-center min-vh-75">
+        <div class="col-lg-7" data-aos="fade-up">
+          <span class="hero-badge"><i class="bi bi-book me-1"></i> Recetas Fáciles</span>
+          <h1 class="hero-title"><span class="highlight">Recetas Saludables</span> Rápidas y Fáciles — Desayunos, Comidas y Postres</h1>
+          <p class="hero-subtitle">Descubre recetas rápidas y nutritivas para todas las comidas del día: entrantes, platos principales y postres, pensadas para simplificar tu cocina.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="#recetas" class="btn btn-primary btn-lg btn-hero">
+              <i class="bi bi-book-open me-2"></i>Ver Recetas
+            </a>
+            <a href="comidas.html" class="btn btn-outline-light btn-lg">
+              <i class="bi bi-bowl me-2"></i>Explorar Comidas
+            </a>
+          </div>
+          <div class="hero-stats mt-4">
+            <div class="stat"><span class="stat-num">120+</span><span class="stat-label">Recetas</span></div>
+            <div class="stat"><span class="stat-num">5-45</span><span class="stat-label">Minutos</span></div>
+            <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Saludable</span></div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex justify-content-end" data-aos="fade-left">
+          <div class="hero-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=520&q=80" alt="Recetas caseras deliciosas" class="hero-img" />
+            <div class="floating-badge fb1"><i class="bi bi-clock me-1"></i>30 min</div>
+            <div class="floating-badge fb2"><i class="bi bi-people me-1"></i>4 personas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house me-1"></i>Inicio</a></li>
+          <li class="breadcrumb-item active">Recetas de cocina</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ===== CATEGORÍAS RÁPIDAS ===== -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="categories-row">
+        <a href="#recetas" class="cat-pill active"><i class="bi bi-grid me-1"></i>Todos</a>
+        <a href="desayunos.html" class="cat-pill"><i class="bi bi-egg me-1"></i>Desayunos</a>
+        <a href="comidas.html" class="cat-pill"><i class="bi bi-bowl me-1"></i>Comidas</a>
+        <a href="postres.html" class="cat-pill"><i class="bi bi-cake me-1"></i>Postres</a>
+        <a href="#recetas" class="cat-pill"><i class="bi bi-leaf me-1"></i>Saludables</a>
+        <a href="#recetas" class="cat-pill"><i class="bi bi-lightning me-1"></i>Rápidos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GRID DE RECETAS ===== -->
+  <section class="recipes-section" id="recetas">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Desayunos Nutritivos</span>
+        <h2 class="section-title">Desayunos Saludables <span class="highlight">para Romper el Ayuno</span></h2>
+        <p class="section-subtitle">Recetas equilibradas, rápidas y deliciosas. Energía y nutrientes para empezar bien el día</p>
+      </div>
+
+      <div class="row g-3" id="recipeGrid">
+
+        <!-- Receta 1 - Sándwich Aguacate & Huevos -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="0">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="sandwich.webp" alt="Sándwich de aguacate y huevos revueltos proteína" class="recipe-img" loading="lazy" />
+              <span class="recipe-badge"><i class="bi bi-fire me-1"></i>Top</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>5 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Sándwich Aguacate & Huevos</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Aguacate</span>
+                <span class="ingredient-tag">Huevos</span>
+                <span class="ingredient-tag">Pan</span>
+              </div>
+              <a href="receta-sandwich-aguacate.html" class="btn btn-recipe btn-recipe-compact">
+                <i class="bi bi-arrow-right me-1"></i>Ver
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Receta 2 - Batido Aguacate & Kiwi -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="50">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="batido.webp" alt="Batido de aguacate y kiwi vitaminas fibra saludable" class="recipe-img" loading="lazy" />
+              <span class="recipe-badge badge-green"><i class="bi bi-leaf me-1"></i>Saludable</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>3 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Batido Aguacate & Kiwi</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Aguacate</span>
+                <span class="ingredient-tag">Kiwi</span>
+                <span class="ingredient-tag">Leche</span>
+              </div>
+              <a href="receta-batido-aguacate.html" class="btn btn-recipe btn-recipe-compact">
+                <i class="bi bi-arrow-right me-1"></i>Ver
+              </a>
+            </div>
+          </article>
+        </div>
+
+
+
+        <!-- Receta 4 - Tosta Huevos Revueltos -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="150">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="huevosrev.webp" alt="Tosta con huevos revueltos proteína desayuno fácil" class="recipe-img" loading="lazy" />
+              <span class="recipe-badge badge-orange"><i class="bi bi-lightning me-1"></i>Rápido</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>6 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Tosta Huevos Revueltos</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Huevos</span>
+                <span class="ingredient-tag">Pan</span>
+                <span class="ingredient-tag">Mantequilla</span>
+              </div>
+              <a href="receta-tosta-huevos.html" class="btn btn-recipe btn-recipe-compact">
+                <i class="bi bi-arrow-right me-1"></i>Ver
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Receta 5 - Bagel Pavo & Remolacha -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="200">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="bagelpavo.webp" alt="Bagel de pavo con hummus de remolacha antioxidantes" class="recipe-img" loading="lazy" />
+              <span class="recipe-badge badge-pink"><i class="bi bi-heart me-1"></i>Premium</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>7 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Bagel Pavo & Remolacha</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Pavo</span>
+                <span class="ingredient-tag">Remolacha</span>
+                <span class="ingredient-tag">Bagel</span>
+              </div>
+              <a href="receta-bagel-pavo.html" class="btn btn-recipe btn-recipe-compact">
+                <i class="bi bi-arrow-right me-1"></i>Ver
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- ===== ANUNCIO ENTRE RECETAS ===== -->
+        <div class="col-12">
+          <div class="ad-block ad-inline">
+            <i class="bi bi-megaphone me-2"></i> Publicidad – Espacio AdSense 728×90
+          </div>
+        </div>
+
+        <!-- NUEVA SECCIÓN: Comidas Saludables en Menos de 20 Min -->
+        <div class="col-12">
+          <div style="text-align: center; padding: 30px 20px; border-top: 2px solid #e05c1a; margin: 20px 0 10px;">
+            <h3 style="color: #1a1208; font-family: 'Playfair Display'; font-size: 24px;">Comidas Saludables en Menos de 20 Min</h3>
+            <p style="color: #666; margin-bottom:0;">Entrantes y platos principales equilibrados, versátiles y satisfactorios. Las fotos son las imágenes locales añadidas, cada una en su sitio.</p>
+          </div>
+        </div>
+
+        <!-- Comida 1 - Ensalada Pasta (foto local) -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="0">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="ensaladapasta.jfif" alt="Ensalada de pasta fresca" class="recipe-img" loading="lazy" />
+              <span class="recipe-badge badge-pink"><i class="bi bi-star me-1"></i>Versátil</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>15 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Ensalada de Pasta</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Pasta</span>
+                <span class="ingredient-tag">Verduras</span>
+                <span class="ingredient-tag">Atún</span>
+              </div>
+              <a href="receta-ensalada-pasta.html" class="btn btn-recipe btn-recipe-compact"><i class="bi bi-arrow-right me-1"></i>Ver</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Comida 2 - Arroz Frito (foto local) -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="50">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="arrozfirto.jfif" alt="Arroz frito con verduras" class="recipe-img" loading="lazy" />
+              <span class="recipe-badge badge-green"><i class="bi bi-lightning me-1"></i>Rápido</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>12 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Arroz Frito</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Arroz</span>
+                <span class="ingredient-tag">Verduras</span>
+                <span class="ingredient-tag">Huevo</span>
+              </div>
+              <a href="receta-arroz-frito.html" class="btn btn-recipe btn-recipe-compact"><i class="bi bi-arrow-right me-1"></i>Ver</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Comida 3 - Brochetas de Pollo (foto local) -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="100">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="brochetaspollo.webp" alt="Brochetas de pollo" class="recipe-img" loading="lazy" />
+              <span class="recipe-badge badge-orange"><i class="bi bi-fire me-1"></i>Proteico</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>18 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Brochetas de Pollo</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Pollo</span>
+                <span class="ingredient-tag">Verduras</span>
+                <span class="ingredient-tag">Especias</span>
+              </div>
+              <a href="receta-brochetas-pollo.html" class="btn btn-recipe btn-recipe-compact"><i class="bi bi-arrow-right me-1"></i>Ver</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Comida 4 - Ensalada Caprese (foto local) -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="150">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="caprese.jpg" alt="Ensalada caprese tomate mozzarella" class="recipe-img" loading="lazy" />
+              <span class="recipe-badge badge-green"><i class="bi bi-leaf me-1"></i>Fresca</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>10 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Ensalada Caprese</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Tomate</span>
+                <span class="ingredient-tag">Mozzarella</span>
+                <span class="ingredient-tag">Albahaca</span>
+              </div>
+              <a href="receta-ensalada-caprese.html" class="btn btn-recipe btn-recipe-compact"><i class="bi bi-arrow-right me-1"></i>Ver</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- ===== SECCIÓN POSTRES DELICIOSOS ===== -->
+        <div class="col-12">
+          <div style="text-align: center; padding: 40px 20px; border-top: 2px solid #e05c1a; margin: 30px 0 20px;">
+            <h3 style="color: #1a1208; font-family: 'Playfair Display'; font-size: 28px;">Postres Deliciosos</h3>
+            <p style="color: #666;">Dulces y elegantes para terminar con broche de oro</p>
+          </div>
+        </div>
+
+        <!-- Postre 1 - Crepes -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="0">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="sandwich.webp" alt="Crepes caseros" class="recipe-img" loading="lazy" />
+              <span class="recipe-badge badge-pink"><i class="bi bi-cake me-1"></i>Postre</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>15 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Crepes Caseros Fáciles</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Harina</span>
+                <span class="ingredient-tag">Huevos</span>
+                <span class="ingredient-tag">Leche</span>
+              </div>
+              <a href="crepes.html" class="btn btn-recipe btn-recipe-compact">
+                <i class="bi bi-arrow-right me-1"></i>Ver
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Postre 2 - Tarta de Queso -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="50">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="tarta-queso.html" alt="Tarta de queso" class="recipe-img" loading="lazy" onerror="this.src='caprese.jpg'" />
+              <span class="recipe-badge badge-pink"><i class="bi bi-cake me-1"></i>Postre</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>40 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Tarta de Queso al Horno</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Queso</span>
+                <span class="ingredient-tag">Huevos</span>
+                <span class="ingredient-tag">Galletas</span>
+              </div>
+              <a href="tarta-queso.html" class="btn btn-recipe btn-recipe-compact">
+                <i class="bi bi-arrow-right me-1"></i>Ver
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Postre 3 - Tiramisú -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="100">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="batido.webp" alt="Tiramisú clásico" class="recipe-img" loading="lazy" />
+              <span class="recipe-badge badge-pink"><i class="bi bi-cake me-1"></i>Postre</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>20 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Tiramisú Clásico</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Café</span>
+                <span class="ingredient-tag">Mascarpone</span>
+                <span class="ingredient-tag">Cacao</span>
+              </div>
+              <a href="tiramisu.html" class="btn btn-recipe btn-recipe-compact">
+                <i class="bi bi-arrow-right me-1"></i>Ver
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Postre 4 - Churros -->
+        <div class="col-12 col-sm-6 col-lg-3 recipe-card-col" data-aos="fade-up" data-aos-delay="150">
+          <article class="recipe-card recipe-card-compact h-100">
+            <div class="recipe-img-wrap">
+              <img src="arrozfirto.jfif" alt="Churros caseros" class="recipe-img" loading="lazy" />
+              <span class="recipe-badge badge-orange"><i class="bi bi-lightning me-1"></i>Rápido</span>
+              <span class="recipe-time"><i class="bi bi-clock me-1"></i>25 min</span>
+            </div>
+            <div class="recipe-body recipe-body-compact">
+              <h3 class="recipe-title-compact">Churros Caseros</h3>
+              <div class="recipe-ingredients-compact">
+                <span class="ingredient-tag">Harina</span>
+                <span class="ingredient-tag">Agua</span>
+                <span class="ingredient-tag">Aceite</span>
+              </div>
+              <a href="churros.html" class="btn btn-recipe btn-recipe-compact">
+                <i class="bi bi-arrow-right me-1"></i>Ver
+              </a>
+            </div>
+          </article>
+        </div>
+
+      </div><!-- /row -->
+    </div>
+  </section>
+
+  
+  <!-- ===== SECCIÓN POPULARES ===== -->
+  <section class="popular-section" id="populares">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Favoritos semanales</span>
+        <h2 class="section-title">Los Platos <span class="highlight">Mejor Valorados</span> Esta Semana</h2>
+      </div>
+      <div class="row g-3 align-items-stretch">
+        <div class="col-12 col-lg-12">
+          <div class="popular-list">
+            <a href="receta-sandwich-aguacate.html" class="popular-item">
+              <span class="pop-num">01</span>
+              <img src="sandwich.webp" alt="Sándwich Aguacate & Huevos" />
+              <div class="pop-info">
+                <strong>Sándwich Aguacate & Huevos</strong>
+                <span>5 min · Top · <i class="bi bi-star-fill" style="color: #FFD700;"></i> 5.0</span>
+              </div>
+              <i class="bi bi-chevron-right pop-arrow"></i>
+            </a>
+            <a href="receta-ensalada-pasta.html" class="popular-item">
+              <span class="pop-num">02</span>
+              <img src="ensaladapasta.jfif" alt="Ensalada de Pasta" />
+              <div class="pop-info">
+                <strong>Ensalada de Pasta Fresca</strong>
+                <span>15 min · Versátil · <i class="bi bi-star-fill" style="color: #FFD700;"></i> 4.9</span>
+              </div>
+              <i class="bi bi-chevron-right pop-arrow"></i>
+            </a>
+            <a href="receta-brochetas-pollo.html" class="popular-item">
+              <span class="pop-num">03</span>
+              <img src="brochetaspollo.webp" alt="Brochetas de Pollo" />
+              <div class="pop-info">
+                <strong>Brochetas de Pollo Proteicas</strong>
+                <span>20 min · Proteico · <i class="bi bi-star-fill" style="color: #FFD700;"></i> 4.8</span>
+              </div>
+              <i class="bi bi-chevron-right pop-arrow"></i>
+            </a>
+            <a href="crepes.html" class="popular-item">
+              <span class="pop-num">04</span>
+              <img src="sandwich.webp" alt="Crepes Caseros" />
+              <div class="pop-info">
+                <strong>Crepes Caseros Fáciles</strong>
+                <span>15 min · Postre · <i class="bi bi-star-fill" style="color: #FFD700;"></i> 4.7</span>
+              </div>
+              <i class="bi bi-chevron-right pop-arrow"></i>
+            </a>
+            <a href="tarta-queso.html" class="popular-item">
+              <span class="pop-num">05</span>
+              <img src="caprese.jpg" alt="Tarta de Queso" />
+              <div class="pop-info">
+                <strong>Tarta de Queso al Horno</strong>
+                <span>40 min · Elegante · <i class="bi bi-star-fill" style="color: #FFD700;"></i> 4.6</span>
+              </div>
+              <i class="bi bi-chevron-right pop-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <!-- Anuncio footer -->
+    <div class="ad-footer-wrap">
+      <div class="container">
+        <div class="ad-block ad-horizontal">
+          <i class="bi bi-megaphone me-2"></i> Publicidad – Espacio AdSense 728×90
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="footer-brand">
+            <a href="index.html" class="footer-logo"><i class="bi bi-egg-fried me-2"></i>RecetasFáciles</a>
+            <p class="footer-desc">El mejor sitio de <strong>recetas fáciles en casa</strong>. Comida casera, económica y deliciosa para toda la familia.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+              <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5 class="footer-title">Recetas</h5>
+          <ul class="footer-links">
+            <li><a href="receta-sandwich-aguacate.html">Sándwich Aguacate & Huevos</a></li>
+            <li><a href="receta-batido-aguacate.html">Batido Aguacate & Kiwi</a></li>
+            <li><a href="receta-tosta-huevos.html">Tosta Huevos Revueltos</a></li>
+            <li><a href="receta-bagel-pavo.html">Bagel Pavo & Remolacha</a></li>
+            <li><a href="receta-ensalada-pasta.html">Ensalada de Pasta</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5 class="footer-title">Más recetas</h5>
+          <ul class="footer-links">
+            <li><a href="receta-arroz-frito.html">Arroz Frito</a></li>
+            <li><a href="receta-brochetas-pollo.html">Brochetas de Pollo</a></li>
+            <li><a href="receta-ensalada-caprese.html">Ensalada Caprese</a></li>
+            <li><a href="crepes.html">Crepes Caseros Fáciles</a></li>
+            <li><a href="tarta-queso.html">Tarta de Queso al Horno</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5 class="footer-title">Categorías</h5>
+          <ul class="footer-links">
+            <li><a href="desayunos.html">Desayunos</a></li>
+            <li><a href="comidas.html">Comidas</a></li>
+            <li><a href="postres.html">Postres</a></li>
+            <li><a href="#">Saludable</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5 class="footer-title">Web</h5>
+          <ul class="footer-links">
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Aviso legal</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-hr" />
+      <div class="footer-bottom">
+        <p>© 2026 RecetasFáciles.com · Todos los derechos reservados · <strong>recetas fáciles en casa</strong> · <strong>comida casera paso a paso</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

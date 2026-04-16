@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crepes caseros fáciles - Receta paso a paso | Postres y desayunos</title>
+  <meta name="description" content="Aprende cómo hacer crepes caseros fáciles y versátiles. Receta paso a paso, ingredientes, consejos y preguntas frecuentes para crepes perfectos." />
+  <meta name="keywords" content="cómo hacer crepes, crepes caseros fáciles, receta paso a paso, postres caseros fáciles" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">RecetasFáciles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="crepes.html">Crepes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-section" style="background: linear-gradient(135deg,#fff7ef 0%,#ffe6d1 100%); min-height:40vh; display:flex; align-items:center;">
+    <div class="container text-center">
+      <h1 style="font-family:'Playfair Display';">Crepes caseros fáciles — receta rápida y versátil</h1>
+      <p class="lead">Una guía completa para preparar crepes finos, suaves y listos para rellenar en menos de 20 minutos.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <article>
+      <img src="sandwich.webp" alt="Crepes caseros" class="img-fluid mb-4 recipe-img" style="height:320px; object-fit:contain; background:#fff8f5;" />
+      <h2 class="h3">Introducción</h2>
+      <p>Los <strong>crepes caseros</strong> son una preparación ligera y adaptable que funciona tanto en desayunos como en meriendas y postres. Con pocos ingredientes básicos y un método sencillo lograrás hojas finas que se doran en sartén y admiten rellenos dulces o salados. Esta receta está diseñada para garantizar textura uniforme y sabor equilibrado, y además incluye consejos para evitar los errores más comunes.</p>
+
+      <div class="ad-block ad-inline my-3">Publicidad</div>
+
+      <h3>Ingredientes (rinden 6 crepes aprox.)</h3>
+      <ul>
+        <li>250 ml de leche entera</li>
+        <li>125 g de harina de trigo</li>
+        <li>2 huevos medianos</li>
+        <li>10 g de azúcar (opcional para versión dulce)</li>
+        <li>Una pizca de sal</li>
+        <li>Mantequilla para la sartén</li>
+      </ul>
+
+      <h3>Preparación paso a paso</h3>
+      <ol>
+        <li>En un vaso batidor mezcla la leche, los huevos, la harina, el azúcar y la sal hasta obtener una masa homogénea y sin grumos.</li>
+        <li>Deja reposar la masa 10 minutos a temperatura ambiente; esto relaja el gluten y permite crepes más finos.</li>
+        <li>Calienta una sartén antiadherente a fuego medio y unta ligeramente con mantequilla.</li>
+        <li>Vierte una pequeña cantidad de masa y mueve la sartén hasta cubrir la superficie en una capa fina.</li>
+
+        <div class="ad-block ad-inline my-3">Publicidad</div>
+
+        <li>Cuando los bordes se despeguen y salgan pequeñas burbujas, gira el crepe con una espátula y cocina 30–60 segundos más.</li>
+        <li>Apila los crepes sobre un plato y cúbrelos para mantenerlos tiernos hasta servir.</li>
+      </ol>
+
+      <h3>Consejos y trucos</h3>
+      <ul>
+        <li><strong>No sobrebatir</strong>: mezclar lo justo evita introducir aire que rompe la textura.</li>
+        <li>Si la masa queda demasiado espesa, añade un chorrito de leche hasta obtener fluidez.</li>
+        <li>El primer crepe actúa como prueba; no lo juzgues, los siguientes saldrán mejor.</li>
+        <li>Para versiones saladas añade hierbas finas y omite el azúcar.</li>
+      </ul>
+
+      <div class="ad-block ad-inline my-3">Publicidad</div>
+
+      <h3>FAQ</h3>
+      <h4>¿Puedo preparar la masa con antelación?</h4>
+      <p>Sí, puedes refrigerarla hasta 24 horas. Remueve antes de usar.</p>
+      <h4>¿Qué rellenos recomiendas?</h4>
+      <p>Frutas frescas y crema, chocolate fundido, queso y jamón, o una mezcla salada con setas.</p>
+      <h4>¿Cómo evitar que se peguen?</h4>
+      <p>Usa una sartén antiadherente y solo una fina capa de grasa entre crepes.</p>
+      <h4>¿Puedo hacerlos sin gluten?</h4>
+      <p>Sí, sustituye la harina por mezcla sin gluten y ajusta la humedad si es necesario.</p>
+
+      <h3>SEO: keywords y texto adicional</h3>
+      <p><strong>Keywords</strong>: crepes caseros fáciles, cómo hacer crepes, receta paso a paso, postres caseros fáciles.</p>
+      <p>Los crepes son una receta clásica que aporta versatilidad a tu recetario: desde versiones ultradalas para postres hasta variantes saladas para un almuerzo ligero. Aprender a dominar la textura y la técnica te abre la puerta a innumerables combinaciones y presentaciones. Con esta guía dominarás los tiempos de cocción, la densidad de la masa y las variaciones para conseguir un acabado profesional en casa.</p>
+
+    </article>
+
+    <section class="mt-5">
+      <h3>Otras recetas relacionadas</h3>
+      <div class="row">
+        <div class="col-6"><a class="d-block p-3 border rounded" href="tiramisu.html">Tiramisú clásico</a></div>
+        <div class="col-6"><a class="d-block p-3 border rounded" href="churros.html">Churros caseros</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer bg-dark text-white py-4">
+    <div class="container text-center">© 2026 RecetasFáciles</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

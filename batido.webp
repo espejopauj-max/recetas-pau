@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aviso Legal - RecetasFáciles.com. Términos y condiciones de uso del sitio web." />
+  <meta name="robots" content="index, follow" />
+  <title>Aviso Legal – RecetasFáciles.com</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-egg-fried me-2"></i>RecetasFáciles</a>
+    </div>
+  </nav>
+
+  <div style="background: #f9f7f4; padding: 60px 0;">
+    <div class="container">
+      <h1 style="font-family: 'Playfair Display'; font-size: 2.5rem; color: #1a1208; margin-bottom: 0; font-weight: 900;">Aviso Legal</h1>
+      <p style="color: #7a6a55; margin: 10px 0 0 0;">Última actualización: 2025</p>
+    </div>
+  </div>
+
+  <section style="padding: 4rem 0;">
+    <div class="container" style="max-width: 800px;">
+      <h2 style="color: #e05c1a; margin-top: 2rem; font-weight: 700;">1. Información del Sitio Web</h2>
+      <p><strong>Denominación:</strong> RecetasFáciles.com</p>
+      <p><strong>URL:</strong> https://recetasfaciles.com</p>
+      <p><strong>Actividad:</strong> Publicación de recetas de cocina e información gastronómica</p>
+
+      <h2 style="color: #e05c1a; margin-top: 2rem; font-weight: 700;">2. Términos de Uso</h2>
+      <p>El acceso a RecetasFáciles.com implica aceptación de estos términos. Si no aceptas, no continúes navegando.</p>
+      <ul>
+        <li>El contenido es informativo y educativo</li>
+        <li>No sustituye el consejo profesional médico o nutricional</li>
+        <li>Consulta con profesionales si tienes alergias o condiciones especiales</li>
+      </ul>
+
+      <h2 style="color: #e05c1a; margin-top: 2rem; font-weight: 700;">3. Propiedad Intelectual</h2>
+      <p>Todo contenido (textos, imágenes, estructuras) es propiedad de RecetasFáciles.com o está debidamente licenciado.</p>
+      <ul>
+        <li>Prohibido reproducir sin autorización</li>
+        <li>Prohibido utilizar con fines comerciales</li>
+        <li>Está permitido compartir enlaces (con atribución)</li>
+      </ul>
+
+      <h2 style="color: #e05c1a; margin-top: 2rem; font-weight: 700;">4. Descargo de Responsabilidad</h2>
+      <p>RecetasFáciles.com proporciona esta información "tal cual". No garantizamos:</p>
+      <ul>
+        <li>Exactitud completa de la información nutricional</li>
+        <li>Que las recetas produzcan resultados específicos</li>
+        <li>Disponibilidad ininterrumpida del sitio</li>
+      </ul>
+      <p><strong>Las recetas son para uso personal. Consulta con profesionales en caso de dudas.</strong></p>
+
+      <h2 style="color: #e05c1a; margin-top: 2rem; font-weight: 700;">5. Enlaces Externos</h2>
+      <p>No somos responsables del contenido de sitios externos vinculados. El enlace no implica aprobación de su contenido.</p>
+
+      <h2 style="color: #e05c1a; margin-top: 2rem; font-weight: 700;">6. Publicidad y Afiliación</h2>
+      <p>Este sitio contiene:</p>
+      <ul>
+        <li><strong>Anuncios Google AdSense:</strong> Publicidad automática personalizada</li>
+        <li><strong>Enlaces de afiliación:</strong> Podemos ganar comisiones sin costo adicional para ti</li>
+      </ul>
+
+      <h2 style="color: #e05c1a; margin-top: 2rem; font-weight: 700;">7. Limitación de Responsabilidad</h2>
+      <p>RecetasFáciles.com NO será responsable por:</p>
+      <ul>
+        <li>Daños indirectos o consecuentes</li>
+        <li>Problemas de seguridad alimentaria</li>
+        <li>Alergias o intolerancias no consideradas</li>
+        <li>Pérdidas económicas derivadas del uso del sitio</li>
+      </ul>
+
+      <h2 style="color: #e05c1a; margin-top: 2rem; font-weight: 700;">8. Modificación de Contenido</h2>
+      <p>RecetasFáciles.com se reserva el derecho de modificar, eliminar o actualizar contenido sin previo aviso.</p>
+
+      <h2 style="color: #e05c1a; margin-top: 2rem; font-weight: 700;">9. Ley Aplicable</h2>
+      <p>Este Aviso Legal se rige por la ley española (LSSI-CE y RGPD europeo).</p>
+
+      <h2 style="color: #e05c1a; margin-top: 2rem; font-weight: 700;">10. Contacto</h2>
+      <p><strong>Email:</strong> legal@recetasfaciles.com</p>
+
+      <p style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #e8d5be; font-size: 0.9rem; color: #7a6a55;">
+        Este Aviso Legal puede actualizar. Revísalo periódicamente para cambios.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container py-3">
+      <p class="footer-bottom">© 2025 RecetasFáciles.com</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

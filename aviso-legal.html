@@ -1,0 +1,136 @@
+// Cookie Consent Banner - RecetasFáciles.com
+// Archivo: js/cookies.js
+// Incluir en todas las páginas: <script src="js/cookies.js"></script>
+
+(function() {
+  'use strict';
+
+  const COOKIE_NAME = 'recetas_cookie_consent';
+  const COOKIE_EXPIRY = 365; // días
+
+  function getCookie(name) {
+    const nameEQ = name + "=";
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      let cookie = cookies[i].trim();
+      if (cookie.indexOf(nameEQ) === 0) {
+        return decodeURIComponent(cookie.substring(nameEQ.length));
+      }
+    }
+    return null;
+  }
+
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + encodeURIComponent(value) + ";" + expires + ";path=/";
+  }
+
+  function hasConsented() {
+    return getCookie(COOKIE_NAME) === 'true';
+  }
+
+  function showCookieBanner() {
+    if (hasConsented()) {
+      return; // No mostrar si ya consintió
+    }
+
+    const banner = document.createElement('div');
+    banner.id = 'cookie-banner';
+    banner.innerHTML = `
+      <div style="
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, #1a1208 0%, #2d1f0a 100%);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        z-index: 9999;
+        box-shadow: 0 -2px 20px rgba(0,0,0,0.3);
+        font-family: 'DM Sans', system-ui, sans-serif;
+      ">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+          <div style="flex: 1; min-width: 250px; text-align: left;">
+            <p style="margin: 0; font-size: 0.95rem; line-height: 1.6;">
+              <strong>🍪 Cookies:</strong> Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies.
+              <a href="privacidad.html" style="color: #f5a623; text-decoration: underline;">Más información</a>
+            </p>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+            <button id="cookie-accept" style="
+              background: #e05c1a;
+              color: white;
+              border: none;
+              padding: 10px 25px;
+              border-radius: 6px;
+              cursor: pointer;
+              font-weight: 600;
+              font-size: 0.9rem;
+              transition: background 0.3s ease;
+            " onmouseover="this.style.background='#b84910'" onmouseout="this.style.background='#e05c1a'">
+              Aceptar
+            </button>
+            <button id="cookie-reject" style="
+              background: rgba(255,255,255,0.2);
+              color: white;
+              border: 1px solid rgba(255,255,255,0.3);
+              padding: 10px 25px;
+              border-radius: 6px;
+              cursor: pointer;
+              font-weight: 600;
+              font-size: 0.9rem;
+              transition: background 0.3s ease;
+            " onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">
+              Rechazar
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.body.appendChild(banner);
+
+    // Event Listeners
+    document.getElementById('cookie-accept').addEventListener('click', function() {
+      setCookie(COOKIE_NAME, 'true', COOKIE_EXPIRY);
+      loadAnalytics();
+      banner.style.display = 'none';
+    });
+
+    document.getElementById('cookie-reject').addEventListener('click', function() {
+      setCookie(COOKIE_NAME, 'false', COOKIE_EXPIRY);
+      banner.style.display = 'none';
+    });
+  }
+
+  function loadAnalytics() {
+    // Google Analytics (solo si consentimiento dado)
+    if (window.gtag) {
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
+    }
+  }
+
+  // Mostrar banner cuando DOM está listo
+  document.addEventListener('DOMContentLoaded', function() {
+    showCookieBanner();
+  });
+
+  // Cargar Google Analytics SOLO si hay consentimiento previo
+  if (hasConsented() && !window.gtag) {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=GA_ID';
+    document.head.appendChild(script);
+    
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_ID', { 'anonymize_ip': true });
+  }
+
+})();

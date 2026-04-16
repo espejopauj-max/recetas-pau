@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Postres caseros - Recetas fáciles y rápidas</title>
-  <meta name="description" content="Colección de postres caseros: crepes, tarta de queso, tiramisú y churros. Recetas detalladas, consejos y anuncios." />
-  <meta name="keywords" content="postres caseros, crepes, tarta de queso, tiramisú, churros, recetas postres" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Desayunos saludables y rápidos – 5 recetas nutritivas de 3-7 minutos. Proteína, fibra, vitaminas para romper el ayuno con energía." />
+  <meta name="keywords" content="desayunos saludables, desayunos rápidos, recetas desayuno, desayunos proteicos, desayudos fáciles" />
+  <meta name="robots" content="index, follow" />
+  <title>Desayunos Saludables – Recetas Rápidas en 3-7 Minutos</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
@@ -22,9 +24,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" id="navRecetas" role="button" data-bs-toggle="dropdown">Recetas</a>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navRecetas">
-              <li><a class="dropdown-item" href="desayunos.html"><i class="bi bi-egg me-2"></i>Desayunos</a></li>
+              <li><a class="dropdown-item active" href="desayunos.html"><i class="bi bi-egg me-2"></i>Desayunos</a></li>
               <li><a class="dropdown-item" href="comidas.html"><i class="bi bi-bowl me-2"></i>Comidas</a></li>
-              <li><a class="dropdown-item active" href="postres.html"><i class="bi bi-cake me-2"></i>Postres</a></li>
+              <li><a class="dropdown-item" href="postres.html"><i class="bi bi-cake me-2"></i>Postres</a></li>
             </ul>
           </li>
         </ul>
@@ -32,122 +34,131 @@
     </div>
   </nav>
 
-  <header class="hero-section" style="background: linear-gradient(135deg,#fff9f7 0%,#fff0e8 100%); min-height:36vh; display:flex; align-items:center;">
-    <div class="container text-center">
-      <h1 style="font-family:'Playfair Display'; font-size: 2.8rem; font-weight: 900; color: #1a1208;">Postres Caseros — Ideas dulces para cualquier ocasión</h1>
-      <p class="lead" style="color: #3a2a15;">Recetas sencillas y explicadas paso a paso: desde crepes rápidos hasta tartas para celebraciones.</p>
+  <section class="hero-section" style="background: #fafafa;">
+    <div class="container position-relative">
+      <div class="row align-items-center" style="padding: 15px 0;">
+        <div class="col-lg-8">
+          <h1 style="font-family: 'Playfair Display'; font-size: 2rem; font-weight: 900; color: #1a1208; margin-bottom: 0.75rem;">
+            <i class="bi bi-egg me-2" style="color: #e05c1a;"></i>Desayunos Saludables & Rápidos
+          </h1>
+          <p style="font-size: 0.95rem; color: #3a2a15; line-height: 1.6; margin-bottom: 1.5rem;">
+            Recetas nutritivas en <strong>3-7 minutos</strong>. Proteína, fibra y vitaminas para romper el ayuno con energía y vitalidad todo el día.
+          </p>
+          <a href="#desayunos" class="btn btn-primary btn-lg"><i class="bi bi-arrow-down me-2"></i>Ver Recetas</a>
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main class="container my-5">
-    <section class="recipes-section">
+  <section class="recipes-section" id="desayunos">
+    <div class="container">
       <div class="section-header text-center mb-5">
-        <span class="section-tag" style="color: #e05c1a; font-weight: 600; display: inline-block; padding: 0.5rem 1rem; background: #fff5f0; border-radius: 20px; font-size: 0.85rem; margin-bottom: 1rem;">Categoría: Postres</span>
-        <h2 class="section-title" style="font-family: 'Playfair Display'; font-size: 2.2rem; color: #1a1208; margin-bottom: 1rem;">4 Postres que <span style="color: #e05c1a;">deleitan siempre</span></h2>
-        <p class="section-subtitle" style="color: #666; font-size: 1.05rem; line-height: 1.6;">Dulces y elegantes para terminar cualquier comida con estilo. Recetas deliciosas y sorprendentes</p>
+        <span class="section-tag">Categoría: Desayunos</span>
+        <h2 class="section-title">5 Desayunos que <span class="highlight">transformarán tu mañana</span></h2>
+        <p class="section-subtitle">Todas nuestras recetas priorizan nutrición, rapidez y delicioso sabor para comenzar bien el día</p>
       </div>
 
-      <!-- Receta 1 - Crepes Caseros -->
+      <!-- Receta 1 - Sándwich Aguacate & Huevos -->
       <div style="margin-bottom: 3rem; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
         <div style="text-align: center; background: #fafafa; padding: 2rem 1rem;">
-          <img src="sandwich.webp" alt="Crepes Caseros Fáciles" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
+          <img src="sandwich.webp" alt="Sándwich Aguacate & Huevos" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
         </div>
         <div style="padding: 2rem;">
-          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Crepes Caseros Fáciles</h3>
+          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Sándwich Aguacate & Huevos</h3>
           <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>15 min</span>
-            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-cake me-1"></i>Postre</span>
-            <span style="color: #e05c1a; font-size: 0.95rem; font-weight: 600;"><i class="bi bi-star-fill me-1"></i>4.7</span>
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>5 min</span>
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-egg me-1"></i>Top</span>
+            <span style="color: #e05c1a; font-size: 0.95rem; font-weight: 600;"><i class="bi bi-star-fill me-1"></i>5.0</span>
           </div>
           <div>
             <h5 style="color: #e05c1a; font-weight: 600; margin-bottom: 0.75rem;">Ingredientes:</h5>
             <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8; margin-bottom: 1rem;">
-              <li><i class="bi bi-dash me-2"></i>Harina</li>
+              <li><i class="bi bi-dash me-2"></i>Aguacate maduro</li>
               <li><i class="bi bi-dash me-2"></i>Huevos</li>
-              <li><i class="bi bi-dash me-2"></i>Leche</li>
+              <li><i class="bi bi-dash me-2"></i>Pan integral</li>
               <li><i class="bi bi-dash me-2"></i>Mantequilla</li>
             </ul>
           </div>
-          <a href="crepes.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
+          <a href="receta-sandwich-aguacate.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
         </div>
       </div>
 
-      <!-- Receta 2 - Tarta de Queso -->
+      <!-- Receta 2 - Batido Aguacate & Kiwi -->
       <div style="margin-bottom: 3rem; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
         <div style="text-align: center; background: #fafafa; padding: 2rem 1rem;">
-          <img src="caprese.jpg" alt="Tarta de Queso al Horno" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
+          <img src="batido.webp" alt="Batido Aguacate & Kiwi" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
         </div>
         <div style="padding: 2rem;">
-          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Tarta de Queso al Horno</h3>
+          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Batido Aguacate & Kiwi</h3>
           <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>40 min</span>
-            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-cake me-1"></i>Elegante</span>
-            <span style="color: #e05c1a; font-size: 0.95rem; font-weight: 600;"><i class="bi bi-star-fill me-1"></i>4.6</span>
-          </div>
-          <div>
-            <h5 style="color: #e05c1a; font-weight: 600; margin-bottom: 0.75rem;">Ingredientes:</h5>
-            <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8; margin-bottom: 1rem;">
-              <li><i class="bi bi-dash me-2"></i>Queso Philadelphia/Ricotta</li>
-              <li><i class="bi bi-dash me-2"></i>Huevos</li>
-              <li><i class="bi bi-dash me-2"></i>Galletas digestivas</li>
-              <li><i class="bi bi-dash me-2"></i>Azúcar y vainilla</li>
-            </ul>
-          </div>
-          <a href="tarta-queso.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
-        </div>
-      </div>
-
-      <!-- Receta 3 - Tiramisú -->
-      <div style="margin-bottom: 3rem; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-        <div style="text-align: center; background: #fafafa; padding: 2rem 1rem;">
-          <img src="batido.webp" alt="Tiramisú Clásico" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
-        </div>
-        <div style="padding: 2rem;">
-          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Tiramisú Clásico</h3>
-          <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>20 min</span>
-            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-cake me-1"></i>Italiano</span>
-            <span style="color: #e05c1a; font-size: 0.95rem; font-weight: 600;"><i class="bi bi-star-fill me-1"></i>4.8</span>
-          </div>
-          <div>
-            <h5 style="color: #e05c1a; font-weight: 600; margin-bottom: 0.75rem;">Ingredientes:</h5>
-            <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8; margin-bottom: 1rem;">
-              <li><i class="bi bi-dash me-2"></i>Café expreso</li>
-              <li><i class="bi bi-dash me-2"></i>Mascarpone</li>
-              <li><i class="bi bi-dash me-2"></i>Bizcochos de Savoiardi</li>
-              <li><i class="bi bi-dash me-2"></i>Cacao en polvo</li>
-            </ul>
-          </div>
-          <a href="tiramisu.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
-        </div>
-      </div>
-
-      <!-- Receta 4 - Churros -->
-      <div style="margin-bottom: 3rem; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-        <div style="text-align: center; background: #fafafa; padding: 2rem 1rem;">
-          <img src="arrozfirto.jfif" alt="Churros Caseros" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
-        </div>
-        <div style="padding: 2rem;">
-          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Churros Caseros</h3>
-          <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>25 min</span>
-            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-cake me-1"></i>Rápido</span>
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>3 min</span>
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-leaf me-1"></i>Saludable</span>
             <span style="color: #e05c1a; font-size: 0.95rem; font-weight: 600;"><i class="bi bi-star-fill me-1"></i>4.9</span>
           </div>
           <div>
             <h5 style="color: #e05c1a; font-weight: 600; margin-bottom: 0.75rem;">Ingredientes:</h5>
             <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8; margin-bottom: 1rem;">
-              <li><i class="bi bi-dash me-2"></i>Harina</li>
-              <li><i class="bi bi-dash me-2"></i>Agua</li>
-              <li><i class="bi bi-dash me-2"></i>Aceite para freír</li>
-              <li><i class="bi bi-dash me-2"></i>Azúcar y canela</li>
+              <li><i class="bi bi-dash me-2"></i>Aguacate</li>
+              <li><i class="bi bi-dash me-2"></i>Kiwis</li>
+              <li><i class="bi bi-dash me-2"></i>Leche</li>
+              <li><i class="bi bi-dash me-2"></i>Miel</li>
             </ul>
           </div>
-          <a href="churros.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
+          <a href="receta-batido-aguacate.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
         </div>
       </div>
-    </section>
-  </main>
+
+      <!-- Receta 3 - Tosta Huevos Revueltos -->
+      <div style="margin-bottom: 3rem; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        <div style="text-align: center; background: #fafafa; padding: 2rem 1rem;">
+          <img src="huevosrev.webp" alt="Tosta Huevos Revueltos" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Tosta Huevos Revueltos</h3>
+          <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>6 min</span>
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-lightning me-1"></i>Rápido</span>
+            <span style="color: #e05c1a; font-size: 0.95rem; font-weight: 600;"><i class="bi bi-star-fill me-1"></i>4.8</span>
+          </div>
+          <div>
+            <h5 style="color: #e05c1a; font-weight: 600; margin-bottom: 0.75rem;">Ingredientes:</h5>
+            <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8; margin-bottom: 1rem;">
+              <li><i class="bi bi-dash me-2"></i>Huevos</li>
+              <li><i class="bi bi-dash me-2"></i>Pan integral</li>
+              <li><i class="bi bi-dash me-2"></i>Mantequilla</li>
+              <li><i class="bi bi-dash me-2"></i>Sal y pimienta</li>
+            </ul>
+          </div>
+          <a href="receta-tosta-huevos.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
+        </div>
+      </div>
+
+      <!-- Receta 4 - Bagel Pavo & Remolacha -->
+      <div style="margin-bottom: 3rem; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        <div style="text-align: center; background: #fafafa; padding: 2rem 1rem;">
+          <img src="bagelpavo.webp" alt="Bagel Pavo & Remolacha" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Bagel Pavo & Remolacha</h3>
+          <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>7 min</span>
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-heart me-1"></i>Premium</span>
+            <span style="color: #e05c1a; font-size: 0.95rem; font-weight: 600;"><i class="bi bi-star-fill me-1"></i>4.7</span>
+          </div>
+          <div>
+            <h5 style="color: #e05c1a; font-weight: 600; margin-bottom: 0.75rem;">Ingredientes:</h5>
+            <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8; margin-bottom: 1rem;">
+              <li><i class="bi bi-dash me-2"></i>Pavo</li>
+              <li><i class="bi bi-dash me-2"></i>Hummus de remolacha</li>
+              <li><i class="bi bi-dash me-2"></i>Bagel</li>
+              <li><i class="bi bi-dash me-2"></i>Lechuga</li>
+            </ul>
+          </div>
+          <a href="receta-bagel-pavo.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer style="background: #1a1208; color: white; padding: 3rem 0; margin-top: 5rem;">
     <div class="container">

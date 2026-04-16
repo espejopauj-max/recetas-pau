@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comidas saludables y rápidas – 4 recetas fáciles en menos de 20 minutos. Platos principales y entrantes para comer bien todos los días." />
+  <meta name="keywords" content="comidas fáciles, comidas rápidas, recetas de comida, platos principales saludables, entrantes rápidos, comida casera" />
+  <meta name="robots" content="index, follow" />
+  <title>Comidas Fáciles y Rápidas – Recetas en Menos de 20 Min</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-egg-fried me-2"></i>RecetasFáciles</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navRecetas" role="button" data-bs-toggle="dropdown">Recetas</a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navRecetas">
+              <li><a class="dropdown-item" href="desayunos.html"><i class="bi bi-egg me-2"></i>Desayunos</a></li>
+              <li><a class="dropdown-item active" href="comidas.html"><i class="bi bi-bowl me-2"></i>Comidas</a></li>
+              <li><a class="dropdown-item" href="postres.html"><i class="bi bi-cake me-2"></i>Postres</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-section" style="background: #fafafa;">
+    <div class="container position-relative">
+      <div class="row align-items-center" style="padding: 10px 0;">
+        <div class="col-lg-8">
+          <h1 style="font-family: 'Playfair Display'; font-size: 2rem; font-weight: 900; color: #1a1208; margin-bottom: 0.10rem;">
+            <i class="bi bi-egg-fried me-2" style="color: #e05c1a;"></i>Comidas Saludables y Rápidas
+          </h1>
+          <p style="font-size: 0.95rem; color: #3a2a15; line-height: 1.6; margin-bottom: 1.5rem;">
+            Recetas prácticas en <strong>menos de 20 minutos</strong>. Entrantes, platos principales y opciones versátiles para comer bien sin sacrificar tiempo ni sabor.
+          </p>
+          <a href="#comidas" class="btn btn-primary btn-lg"><i class="bi bi-arrow-down me-2"></i>Ver Recetas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recipes-section" id="comidas">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Categoría: Comidas</span>
+        <h2 class="section-title">4 Comidas que <span class="highlight">cumplen siempre</span></h2>
+        <p class="section-subtitle">Entrantes presentes y platos principales satisfactorios. Simples, nutritivos y auténticamente sabrosos</p>
+      </div>
+
+      <!-- Receta 1 - Ensalada Caprese -->
+      <div style="margin-bottom: 3rem; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        <div style="text-align: center; background: #fafafa; padding: 2rem 1rem;">
+          <img src="caprese.jpg" alt="Ensalada caprese fresca tomate mozzarella" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Ensalada Caprese</h3>
+          <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>5 min</span>
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-leaf me-1"></i>Fresca</span>
+            <span style="color: #e05c1a; font-size: 0.95rem; font-weight: 600;"><i class="bi bi-star-fill me-1"></i>4.5</span>
+          </div>
+          <div>
+            <h5 style="color: #e05c1a; font-weight: 600; margin-bottom: 0.75rem;">Ingredientes:</h5>
+            <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8; margin-bottom: 1rem;">
+              <li><i class="bi bi-dash me-2"></i>Tomate</li>
+              <li><i class="bi bi-dash me-2"></i>Mozzarella</li>
+              <li><i class="bi bi-dash me-2"></i>Albahaca</li>
+            </ul>
+          </div>
+          <a href="receta-ensalada-caprese.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
+        </div>
+      </div>
+
+      <!-- Receta 2 - Brochetas Pollo -->
+      <div style="margin-bottom: 3rem; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        <div style="text-align: center; background: #fafafa; padding: 2rem 1rem;">
+          <img src="brochetaspollo.webp" alt="Brochetas pollo con verduras proteína" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Brochetas de Pollo</h3>
+          <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>20 min</span>
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-fire me-1"></i>Proteico</span>
+            <span style="color: #e05c1a; font-size: 0.95rem; font-weight: 600;"><i class="bi bi-star-fill me-1"></i>4.7</span>
+          </div>
+          <div>
+            <h5 style="color: #e05c1a; font-weight: 600; margin-bottom: 0.75rem;">Ingredientes:</h5>
+            <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8; margin-bottom: 1rem;">
+              <li><i class="bi bi-dash me-2"></i>Pollo</li>
+              <li><i class="bi bi-dash me-2"></i>Verduras</li>
+              <li><i class="bi bi-dash me-2"></i>Ajo</li>
+            </ul>
+          </div>
+          <a href="receta-brochetas-pollo.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
+        </div>
+      </div>
+
+      <!-- Receta 3 - Arroz Frito -->
+      <div style="margin-bottom: 3rem; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        <div style="text-align: center; background: #fafafa; padding: 2rem 1rem;">
+          <img src="arrozfirto.jfif" alt="Arroz frito con verduras huevo completo" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Arroz Frito</h3>
+          <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>15 min</span>
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-lightning me-1"></i>Rápido</span>
+            <span style="color: #e05c1a; font-size: 0.95rem; font-weight: 600;"><i class="bi bi-star-fill me-1"></i>4.6</span>
+          </div>
+          <div>
+            <h5 style="color: #e05c1a; font-weight: 600; margin-bottom: 0.75rem;">Ingredientes:</h5>
+            <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8; margin-bottom: 1rem;">
+              <li><i class="bi bi-dash me-2"></i>Arroz</li>
+              <li><i class="bi bi-dash me-2"></i>Huevo</li>
+              <li><i class="bi bi-dash me-2"></i>Verduras</li>
+            </ul>
+          </div>
+          <a href="receta-arroz-frito.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
+        </div>
+      </div>
+
+      <!-- Receta 4 - Ensalada Pasta -->
+      <div style="margin-bottom: 3rem; border: 1px solid #e8e8e8; border-radius: 12px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+        <div style="text-align: center; background: #fafafa; padding: 2rem 1rem;">
+          <img src="ensaladapasta.jfif" alt="Ensalada pasta fresca meal prep versátil" style="max-width: 100%; height: 280px; object-fit: cover; border-radius: 8px;" />
+        </div>
+        <div style="padding: 2rem;">
+          <h3 style="font-family: 'Playfair Display'; font-size: 1.8rem; color: #1a1208; margin-bottom: 1rem;">Ensalada de Pasta</h3>
+          <div style="display: flex; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-clock me-1"></i>20 min</span>
+            <span style="color: #666; font-size: 0.95rem;"><i class="bi bi-star me-1"></i>Versátil</span>
+            <span style="color: #e05c1a; font-size: 0.95rem; font-weight: 600;"><i class="bi bi-star-fill me-1"></i>4.8</span>
+          </div>
+          <div>
+            <h5 style="color: #e05c1a; font-weight: 600; margin-bottom: 0.75rem;">Ingredientes:</h5>
+            <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8; margin-bottom: 1rem;">
+              <li><i class="bi bi-dash me-2"></i>Pasta</li>
+              <li><i class="bi bi-dash me-2"></i>Atún</li>
+              <li><i class="bi bi-dash me-2"></i>Aguacate</li>
+            </ul>
+          </div>
+          <a href="receta-ensalada-pasta.html" class="btn btn-primary" style="background: #e05c1a; border: none;"><i class="bi bi-arrow-right me-2"></i>Ver receta completa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN PLATOS POPULARES ===== -->
+  <section class="popular-section" id="populares" style="background: #fafafa; padding: 5rem 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span style="color: #e05c1a; font-weight: 600; font-size: 0.9rem;">Lo más visto</span>
+        <h2 style="font-family: 'Playfair Display'; font-size: 2rem; color: #1a1208; margin-bottom: 0.5rem;">Los Platos <span style="color: #e05c1a;">Más Pedidos</span></h2>
+      </div>
+      <div class="row g-3">
+        <!-- Plato 1 -->
+        <div class="col-12 col-lg-6">
+          <a href="receta-ensalada-pasta.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 1.5rem; background: white; border-radius: 12px; border-left: 4px solid #e05c1a; transition: all 0.3s ease;">
+            <span style="background: #e05c1a; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.3rem; margin-right: 1.5rem; flex-shrink: 0;">01</span>
+            <div>
+              <strong style="color: #1a1208; display: block; margin-bottom: 0.5rem;">Ensalada de Pasta</strong>
+              <span style="color: #666; font-size: 0.9rem;">20 min · Versátil · <i class="bi bi-eye me-1"></i>45K vistas</span>
+            </div>
+            <i class="bi bi-chevron-right" style="color: #e05c1a; margin-left: auto; font-size: 1.5rem;"></i>
+          </a>
+        </div>
+
+        <!-- Plato 2 -->
+        <div class="col-12 col-lg-6">
+          <a href="receta-brochetas-pollo.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 1.5rem; background: white; border-radius: 12px; border-left: 4px solid #e05c1a; transition: all 0.3s ease;">
+            <span style="background: #e05c1a; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.3rem; margin-right: 1.5rem; flex-shrink: 0;">02</span>
+            <div>
+              <strong style="color: #1a1208; display: block; margin-bottom: 0.5rem;">Brochetas de Pollo</strong>
+              <span style="color: #666; font-size: 0.9rem;">20 min · Proteico · <i class="bi bi-eye me-1"></i>38K vistas</span>
+            </div>
+            <i class="bi bi-chevron-right" style="color: #e05c1a; margin-left: auto; font-size: 1.5rem;"></i>
+          </a>
+        </div>
+
+        <!-- Plato 3 -->
+        <div class="col-12 col-lg-6">
+          <a href="receta-arroz-frito.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 1.5rem; background: white; border-radius: 12px; border-left: 4px solid #e05c1a; transition: all 0.3s ease;">
+            <span style="background: #e05c1a; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.3rem; margin-right: 1.5rem; flex-shrink: 0;">03</span>
+            <div>
+              <strong style="color: #1a1208; display: block; margin-bottom: 0.5rem;">Arroz Frito</strong>
+              <span style="color: #666; font-size: 0.9rem;">15 min · Rápido · <i class="bi bi-eye me-1"></i>32K vistas</span>
+            </div>
+            <i class="bi bi-chevron-right" style="color: #e05c1a; margin-left: auto; font-size: 1.5rem;"></i>
+          </a>
+        </div>
+
+        <!-- Plato 4 -->
+        <div class="col-12 col-lg-6">
+          <a href="receta-ensalada-caprese.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 1.5rem; background: white; border-radius: 12px; border-left: 4px solid #e05c1a; transition: all 0.3s ease;">
+            <span style="background: #e05c1a; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.3rem; margin-right: 1.5rem; flex-shrink: 0;">04</span>
+            <div>
+              <strong style="color: #1a1208; display: block; margin-bottom: 0.5rem;">Ensalada Caprese</strong>
+              <span style="color: #666; font-size: 0.9rem;">5 min · Fresca · <i class="bi bi-eye me-1"></i>28K vistas</span>
+            </div>
+            <i class="bi bi-chevron-right" style="color: #e05c1a; margin-left: auto; font-size: 1.5rem;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: #1a1208; color: white; padding: 3rem 0; margin-top: 5rem;">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-12 col-md-4">
+          <div>
+            <a href="index.html" style="color: #e05c1a; font-size: 1.4rem; font-weight: 700; text-decoration: none;">
+              <i class="bi bi-egg-fried me-2"></i>RecetasFáciles
+            </a>
+            <p style="color: #aaa; font-size: 0.9rem; margin-top: 0.5rem; line-height: 1.6;">
+              El mejor sitio de <strong>recetas fáciles en casa</strong>. Comida casera, económica y deliciosa para toda la familia.
+            </p>
+            <div style="margin-top: 1rem;">
+              <a href="#" style="color: #aaa; text-decoration: none; margin-right: 0.75rem; font-size: 1.2rem;" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" style="color: #aaa; text-decoration: none; margin-right: 0.75rem; font-size: 1.2rem;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" style="color: #aaa; text-decoration: none; margin-right: 0.75rem; font-size: 1.2rem;" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+              <a href="#" style="color: #aaa; text-decoration: none; font-size: 1.2rem;" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5 style="color: #e05c1a; margin-bottom: 1rem; font-weight: 600;">Recetas</h5>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="receta-sandwich-aguacate.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Sándwich Aguacate & Huevos</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="receta-batido-aguacate.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Batido Aguacate & Kiwi</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="receta-tosta-huevos.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Tosta Huevos Revueltos</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="receta-bagel-pavo.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Bagel Pavo & Remolacha</a></li>
+            <li><a href="receta-ensalada-pasta.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Ensalada de Pasta</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5 style="color: #e05c1a; margin-bottom: 1rem; font-weight: 600;">Más recetas</h5>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="receta-arroz-frito.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Arroz Frito</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="receta-brochetas-pollo.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Brochetas de Pollo</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="receta-ensalada-caprese.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Ensalada Caprese</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="crepes.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Crepes Caseros Fáciles</a></li>
+            <li><a href="tarta-queso.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Tarta de Queso al Horno</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5 style="color: #e05c1a; margin-bottom: 1rem; font-weight: 600;">Categorías</h5>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="desayunos.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Desayunos</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="comidas.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Comidas</a></li>
+            <li><a href="postres.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Postres</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5 style="color: #e05c1a; margin-bottom: 1rem; font-weight: 600;">Web</h5>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.5rem;"><a href="sobre-nosotros.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Sobre nosotros</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="#" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Contacto</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="privacidad.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Política privacidad</a></li>
+            <li><a href="aviso-legal.html" style="color: #aaa; text-decoration: none; font-size: 0.9rem;">Aviso legal</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr style="border-color: #333; margin: 2rem 0;" />
+      <div style="text-align: center; color: #666; font-size: 0.85rem;">
+        <p>© 2026 RecetasFáciles.com · Todos los derechos reservados · <strong>recetas fáciles en casa</strong> · <strong>comida casera paso a paso</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
